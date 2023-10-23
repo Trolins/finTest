@@ -9,9 +9,6 @@ import { Observable } from 'rxjs';
 export class GetDataService {
 
   constructor(private http: HttpClient) {
-    // this.getJSON().subscribe(data => {
-    //     console.log("service - ", data);
-    // });
 }
 
 public getJSON(): Observable<any> {
