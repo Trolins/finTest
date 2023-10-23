@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GetDataService } from './services/get-data.service';
 import { FinanceData } from './models/data.model';
 
@@ -7,7 +7,7 @@ import { FinanceData } from './models/data.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   mainData: FinanceData = new FinanceData;
 
   constructor(private GetDataService : GetDataService) { }

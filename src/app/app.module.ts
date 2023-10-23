@@ -12,6 +12,8 @@ import { MainGraphComponent } from './main-graph-table/main-graph/main-graph.com
 import { MainListComponent } from './main-graph-table/main-list/main-list.component';
 import { OrderByPipe } from './pipes/orderBy';
 import { AbsPipe } from './pipes/abs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { AbsPipe } from './pipes/abs';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    BrowserAnimationsModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
