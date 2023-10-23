@@ -1,0 +1,21 @@
+.line-data {
+    margin-left: 30px; 
+    div {        
+        border-bottom: 1px solid #E0E0E0;
+    }
+    ul {
+        margin-bottom: 16px;
+        border-width: 0;
+        border-left: 1px solid;
+    }  
+    list-block {        
+        border-width: 0;
+        border-right: 1px solid;
+    }
+}
+
+.line-data ul,
+list-block {
+    border-image: linear-gradient(90deg, rgba(224,224,224,0) 0%, rgba(224,224,224,1) 40%, rgba(224,224,224,1) 60%, rgba(224,224,224,0) 100%) 0 80% ;
+}
+

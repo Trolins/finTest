@@ -1,0 +1,13 @@
+<li class="money-block">
+    <h6> {{blockHeader}} <span>грн.</span></h6>
+    <p class="diff">
+        <span class="money">{{shownData.dif_money}}</span>&nbsp;
+        <span class="currency">млн.</span>&nbsp;
+        <span class="percent" [ngClass]="shownData.type"> 
+            <span *ngIf="shownData.type == 'up'">&uarr;</span> 
+            <span *ngIf="shownData.type == 'down'">&darr;</span> 
+            {{shownData.dif_percent}}%
+        </span>
+    </p>
+    <p class="year"> {{shownData.year}} рік</p>
+</li>

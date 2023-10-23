@@ -1,0 +1,23 @@
+<div class="container list-col">
+    <ul class="year-list">
+        <li>&nbsp;</li>
+        <li *ngFor="let y of years">
+            <p>{{y}}</p>
+        </li>
+    </ul>
+    <div class="data-list-wrap">
+        <ul class="col-3 data-list" *ngFor="let item of mainData | keyvalue">
+            <li class="table-header">{{keysList[item.key]}}</li>
+            <li *ngFor="let data of item.value">
+                <p>
+                    {{data.sum / 1e6 | number: '1.0-2'}} - {{data.sum / 1e6 | number: '1.0-2'}}
+                    <span class="curr">млн.</span>
+                    <span class="diff up">
+                        <span>&uarr;</span> 
+                        77%
+                    </span>
+                </p>
+            </li>
+        </ul> 
+    </div>         
+</div>

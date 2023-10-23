@@ -1,0 +1,44 @@
+.money-block {    
+    text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0em;   
+    p {        
+        margin-bottom: 0;
+    } 
+    h6 {
+        font-weight: 600;
+        line-height: 17px;
+        font-size: 13px;
+        margin-bottom: 8px;
+        span {
+            font-weight: 400;
+            color: #8B8B8B;
+        }
+    }
+    .diff {
+        margin-bottom: 0;
+        .currency,
+        .money {
+            font-weight: 600;
+        }        
+        .currency {
+            color: #8B8B8B;
+        }
+        .money {
+            color: #365899;
+        }
+        .percent {
+            &.up {
+                color: #03A87C;
+            }
+            &.down {
+                color: #C1272D;
+            }
+        }
+    }
+    .year {
+        color: #8B8B8B;
+        margin: 0;
+    }
+}

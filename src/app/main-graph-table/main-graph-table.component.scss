@@ -1,0 +1,41 @@
+.main-info-header {
+    p {
+        margin-bottom: 0;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #8B8B8B;
+    }
+    .switcher {
+        text-align: right;
+        display: inline-block;
+        :first-child {
+            p {
+                margin-right: 19px;
+            }
+        }
+        button {
+            background: none;
+            padding-left: 0;
+            text-transform: uppercase;
+            border-bottom: 1px solid #E0E0E0;
+            p {                
+                border-bottom: 2px solid transparent;
+                img {
+                    margin-right: 4px;
+                }
+            }
+            &.active {
+                p {
+                    color: #4EDADD;
+                    border-bottom: 2px solid #4EDADD;
+                }
+            }
+            p {
+                
+            }
+        }
+    }
+}

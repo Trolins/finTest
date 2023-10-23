@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 main-info-header">
+            <div class="row">
+                <p class="col-8 col-sm-6">Динаміка основних фінансових показників, грн.</p>
+                <div class="col-4 col-sm-6 switcher">
+                    <button [ngClass]="{'active': show === 'graph'}" (click)="show = 'graph'">
+                        <p>
+                            <img *ngIf="show != 'graph'" src="./assets/icons/graph.png" alt="graph">
+                            <img *ngIf="show == 'graph'" src="./assets/icons/graph-active.png" alt="graph-active">
+                            <span>Графік</span>
+                        </p>
+                    </button>
+                    <button [ngClass]="{'active': show === 'list'}" (click)="show = 'list'">
+                        <p>
+                            <img *ngIf="show != 'list'" src="./assets/icons/list.png" alt="list">
+                            <img *ngIf="show == 'list'" src="./assets/icons/list-active.png" alt="list-active">
+                            <span>Список</span>
+                        </p>                    
+                    </button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <main-graph *ngIf="show == 'graph'" [mainData]=data></main-graph>
+    <main-list *ngIf="show == 'list'" [mainData]=data></main-list>    
+</div>
+
